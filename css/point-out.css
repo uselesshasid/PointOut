@@ -1,0 +1,72 @@
+﻿.pointOut-outline{
+    outline: 1px solid #c00;
+}
+
+#pointOut-dialog {
+    direction:ltr;
+}
+
+#pointOut-dialog a{
+    color: #07C;
+    text-decoration:none;
+}
+
+#pointOut-dialog a:hover{
+    text-decoration:underline;
+}
+
+#pointOut-dialog h2{
+    font-size:20px;
+}
+
+#pointOut-dialog h3{
+    font-weight:bold;
+    font-size:14px;
+    margin-top:10px;
+}
+
+
+.yellow-fade{
+    -webkit-animation:yellow-fade 3s;
+       -moz-animation:yellow-fade 3s;
+            animation:yellow-fade 3s;
+}
+
+@-webkit-keyframes yellow-fade{
+    5%{ background-color:#ff8; }
+}
+
+@-moz-keyframes yellow-fade{
+    5%{ background-color:#ff8; }
+}
+
+@keyframes yellow-fade{
+    5%{ background-color:#ff8; }
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}
+
+
+.pointout-loading-outer{
+    position:absolute;
+    display: table;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+}
+
+.pointout-loading-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pointout-dialog-outer{
+    display:table;
+    width:100%;
+}
+
+.pointout-dialog-inner{
+    display:  table-cell;
+    vertical-align: middle;
+}
