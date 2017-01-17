@@ -203,7 +203,8 @@
         self.selectedElement = document.elementFromPoint(e.clientX, e.clientY);
         self.cssSelecter = self.Predict.getPathsFor([self.selectedElement])[0];
         replaceImagesWithDataUrl(self.selectedElement);
-        applyCleanCssStyleElement(self.selectedElement);
+        var c = new CleanCss()
+        c.applyCleanCssStyleElement(self.selectedElement);
         var adaptiveParent = null;
         if (self.selectedElement.tagName == "TD" || self.selectedElement.tagName == "TR") {
             var table = document.createElement("table");
@@ -276,6 +277,8 @@ PointOut.prototype.Highlight = function (jqueryElement) {
     }, 500)
 }
 
-var pointOut = new PointOut(config);
+CleanCss.initialize();
 
+var config = new Config();
+var pointOut = new PointOut(config);
 pointOut.init();

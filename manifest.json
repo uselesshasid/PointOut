@@ -35,7 +35,7 @@
     {
       "matches": [ "http://*/*", "https://*/*" ],
       "css": ["css/jquery-ui.css", "css/point-out.css", "css/toastr.css" ],
-      "js": ["scripts/config.js", "scripts/jquery-2.1.4.min.js", "scripts/jquery-ui.js",  "scripts/jquery_extensions.js", "scripts/dom.js", "scripts/jquery.scrollTo.min.js", "scripts/spin.min.js", "scripts/contentscript.js", "scripts/toastr.js", "scripts/clean-css.js", "scripts/testhelpers.js" ]
+      "js": ["scripts/config.js", "scripts/jquery-2.1.4.min.js", "scripts/jquery-ui.js",  "scripts/jquery_extensions.js", "scripts/dom.js", "scripts/jquery.scrollTo.min.js", "scripts/clean-css.js", "scripts/contentscript.js", "scripts/toastr.js", "scripts/testhelpers.js" ]
     }
   ]
 }

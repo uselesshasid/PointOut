@@ -10,6 +10,5 @@
 /// <reference path="jquery-2.1.4.min.js" />
 /// <reference path="jquery-ui.js" />
 /// <reference path="qunit-1.20.0.js" />
-/// <reference path="spin.min.js" />
 /// <reference path="testhelpers.js" />
 /// <reference path="toastr.js" />
