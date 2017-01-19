@@ -253,3 +253,5 @@ paket-files/
 *.zip
 
 scripts/
+
+bower_components/**/*

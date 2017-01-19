@@ -19,10 +19,10 @@ gulp.task("build", function(){
 gulp.task("copyfiles",function(){
     del(['scripts/**/*']);
     gulp.src([
-        "node_modules/jquery/dist/jquery.min.js", 
-        "node_modules/jquery-ui/dist/jquery-ui.js", 
-        "node_modules/jquery-scrollto/out/lib/jquery-scrollto.js", 
-        "node_modules/toastr/build/toastr.min.js",
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/jquery-ui/jquery-ui.min.js",
+        "bower_components/jquery.scrollTo/jquery.scrollTo.min.js",
+        "bower_components/toastr/toastr.min.js",
         "src/background.js",
         "src/contentscript.js",
         "src/dom.js",
