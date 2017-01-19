@@ -34,8 +34,21 @@
   "content_scripts": [
     {
       "matches": [ "http://*/*", "https://*/*" ],
-      "css": ["css/jquery-ui.css", "css/point-out.css", "css/toastr.css" ],
-      "js": ["scripts/config.js", "scripts/jquery-2.1.4.min.js", "scripts/jquery-ui.js",  "scripts/jquery_extensions.js", "scripts/dom.js", "scripts/jquery.scrollTo.min.js", "scripts/clean-css.js", "scripts/contentscript.js", "scripts/toastr.js", "scripts/testhelpers.js" ]
+      "css": [
+        "node_modules/jquery-ui/themes/base/all.css", 
+        "css/point-out.css", 
+        "node_modules/toastr/build/toastr.min.css" ],
+      "js": [
+        "scripts/config.js", 
+        "scripts/jquery.min.js", 
+        "scripts/jquery-ui.js.js", 
+        "scripts/jquery.extensions.js", 
+        "scripts/dom.js", 
+        "scripts/jquery-scrollto.js", 
+        "scripts/clean-css.js", 
+        "scripts/contentscript.js", 
+        "scripts/toastr.min.js"
+        ]
     }
   ]
 }

@@ -8,10 +8,17 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "jquery": "3.1.1",
+    "jquery-ui": "1.12.1",
+    "jquery-scrollto": "1.4.6",
+    "toastr": "2.1.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-typescript": "3.1.4",
     "gulp-zip": "3.2.0",
-    "typescript": "^2.1.5"
+    "typescript": "^2.1.5",
+    "gulp-clean": "0.3.2"
   }
 }
