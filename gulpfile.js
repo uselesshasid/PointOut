@@ -2,7 +2,7 @@
 var gulp = require("gulp");
 var zip = require("gulp-zip");
 var ts = require("gulp-typescript");
-var gulpclean = require("gulp-clean");
+var del = require("del");
 
 var version = require('./manifest.json').version;
 
@@ -17,7 +17,7 @@ gulp.task("build", function(){
 
 
 gulp.task("copyfiles",function(){
-    gulp.src('scripts\*',{read:false}).pipe(gulpclean());
+    del(['scripts/**/*']);
     gulp.src([
         "node_modules/jquery/dist/jquery.min.js", 
         "node_modules/jquery-ui/dist/jquery-ui.js", 

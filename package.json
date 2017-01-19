@@ -15,10 +15,10 @@
     "toastr": "2.1.2"
   },
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-typescript": "3.1.4",
     "gulp-zip": "3.2.0",
-    "typescript": "^2.1.5",
-    "gulp-clean": "0.3.2"
+    "typescript": "^2.1.5"
   }
 }
