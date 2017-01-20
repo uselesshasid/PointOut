@@ -253,5 +253,5 @@ paket-files/
 *.zip
 
 scripts/
-
+dist/
 bower_components/**/*

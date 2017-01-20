@@ -12,10 +12,11 @@ interface diff {
 class CleanCss {    
 
     static  iframe:HTMLIFrameElement;
+
     static initialize(){
-        this.iframe = document.createElement("ifram") as HTMLIFrameElement;
+        this.iframe = document.createElement("iframe") as HTMLIFrameElement;
         this.iframe.style.display = 'none';
-        document.body.appendChild(this.iframe);                
+        document.body.appendChild(this.iframe);
     }
 
     constructor(){

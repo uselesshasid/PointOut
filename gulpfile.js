@@ -17,6 +17,11 @@ gulp.task("build", function(){
 
 
 gulp.task("copyfiles",function(){
+    gulp.src([
+        "bower_components/jquery-ui/themes/base/all.css",
+        "bower_components/toastr/toastr.min.css"
+    ]).pipe(gulp.dest('css'));
+
     del(['scripts/**/*']);
     gulp.src([
         "bower_components/jquery/dist/jquery.min.js",
@@ -31,11 +36,18 @@ gulp.task("copyfiles",function(){
         .pipe(gulp.dest('scripts'));
 })
 
-gulp.task("zipfiles", function () {
+gulp.task("zip", function () {
+
+    gulp.src(['scripts/**/*.js', 'css/*', 'icon.png', 'manifest.json', 'images/*'], { base: './' })
+    .pipe(gulp.dest('dist/' + version));
     gulp.src(['scripts/**/*.js', 'css/*', 'icon.png', 'manifest.json', 'images/*'], { base: './' })
         .pipe(zip('PointOut_v' + version + '.zip'))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist/' +  version));
 })
+
+gulp.task('all', ['copyfiles', 'build', 'zip'], function(){
+    
+});
 
 gulp.task('watch',function(){
     gulp.watch('src/**/*.ts',['build']);
