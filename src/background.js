@@ -13,6 +13,6 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function (details) {
            details.requestHeaders.push({ name: 'PointOut', value: '' });
            console.log(details.requestHeaders);
            return { requestHeaders: details.requestHeaders };
-       },{ urls: ["<all_urls>"] },
+       },{ urls: ["*://*.pointout.link/*"] },
        ["blocking", "requestHeaders"]);
 
