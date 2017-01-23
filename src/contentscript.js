@@ -3,7 +3,7 @@
     self.config = config;
     self.Predict = new DomPredictionHelper();
     self.selectionMode = false;
-    self.apiUrl = self.config.host + '/api/pointout';
+    self.apiUrl = '//' + self.config.host + '/api/pointout';
     self.cssSelecter = '';
     self.selectedElement = null;
     self.content = '';
