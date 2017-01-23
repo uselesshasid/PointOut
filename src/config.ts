@@ -1,3 +1,3 @@
 class Config {
-    host = '//pointout.dev'
+    host = '//pointout.link'
 }
